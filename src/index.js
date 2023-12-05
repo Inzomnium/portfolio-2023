@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Raiz from './routes/root';
 import ErrorPage from './errorMsj';
 import About from './routes/aboutme';
+import MyWork from './routes/mywork';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path:"/about" ,
     element: <About/>,
+  },
+  {
+    path:"/mywork",
+    element: <MyWork />
   }
 ]);
 
