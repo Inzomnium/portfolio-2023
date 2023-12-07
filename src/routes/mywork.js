@@ -10,12 +10,22 @@ export default function MyWork() {
 
     const [OpenWork, setOpenWork] = useState(false)
 
+    const [CerrarV, setCerrarV] = useState(true)
+
     function ApertureWork () {
         setOpenWork(true)
     }
     function CerrarWork (){     
         setOpenWork(false)
     }
+    function CerrarGrid () {
+        setCerrarV(false)
+    }
+    function AbrirGrid () {
+        setCerrarV(true)
+    }
+      
+  
 
     const [query, setQuery] = useState()
 return(
@@ -40,23 +50,19 @@ return(
 </section>
 <section className="content">
     <Container>
-    <Row className={ OpenWork ? 'Fila' : 'block Fila' }>
+    <Row className={ CerrarV ? 'Fila' : 'd-none Fila' }>
     {
                                     projects.map((project, index) => {
                                         return (
                                             <WorkCards 
                                             onQuery={setQuery}
-                                            setWin={OpenWork}
+                                            setWin={CerrarGrid}
                                             abrir={ApertureWork}                                           
                                             key={index}
                                             {...project}
                                             />
                                         )
                                     })
-
-
-                                    
-
 
 
                                 }
@@ -66,15 +72,7 @@ return(
    
 </section>
 
-{ OpenWork &&
- 
-        <WorkText 
-        query={query}
-        cerrar={CerrarWork}                                      
-        />
-    
-
- } 
+{ OpenWork && <WorkText query={query} cerrar={CerrarWork} abrir={AbrirGrid} />  } 
 
 </Container>
 

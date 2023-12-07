@@ -1,12 +1,12 @@
 import { Col, Image } from "react-bootstrap"
 
 
-export function  WorkCards ({onQuery, abrir, title, subtitle, description, imgUrl, year, link, type}) {
+export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, description, imgUrl, year, link, type}) {
 
     function openText() {
-
         abrir()
         onQuery([year, type, description])
+        setWin()
     }
     
     return (
