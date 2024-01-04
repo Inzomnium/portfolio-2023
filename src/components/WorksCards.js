@@ -5,7 +5,7 @@ export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, descriptio
 
     function openText() {
         abrir()
-        onQuery([year, type, description])
+        onQuery([year, type, description, title, subtitle, imgUrl])
         setWin()
     }
     
@@ -16,11 +16,11 @@ export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, descriptio
     
 
 
-    <Col xs={3}>       
-    <a  onClick={() => openText()}>
+    <Col className="card-works" xs={3}>       
+    <button className="btn-crd" onClick={() => openText()}>
     <Image className="w-100" roundedCircle src={imgUrl} />
-    <h4>{title} : {subtitle} </h4>
-    </a>
+    <h4> <span>{title}</span> <small>{subtitle}</small> </h4>
+    </button>
     </Col>
     
      

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Row, Col, Container, Image } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 import { NavBar } from "../components/Navbar"
 import { WorkText } from "../components/WorksTexts"
 import { WorkCards } from "../components/WorksCards"
@@ -30,17 +30,17 @@ export default function MyWork() {
     const [query, setQuery] = useState()
 return(
 <Container fluid>
-<section className="header">
+<section id="mywork" className="header">
 <Row>
     <Col  xl={12} className="title">
     <h1> My Work</h1>
     </Col>
     <Col xl={12} className="navsbtns">
         <NavBar />
-    <ul>
-        <li><a href="#">Web Dev/Design</a></li>
-        <li><a href="#">Client/Project Management</a></li>
-        <li><a href="#">UX Study cases</a></li>
+    <ul className="btns-works">
+        <li><button href="#">Web Dev/Design</button></li>
+        <li><button href="#">Client/Project Management</button></li>
+        <li><button href="#">UX Study cases</button></li>
     </ul>
 
     </Col>

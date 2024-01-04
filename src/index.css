@@ -105,4 +105,79 @@ html body {
   border: 2px solid var(--negro);
   color: var(--negro);
 }
+#mywork .navsbtns .btns-works{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#mywork .navsbtns .btns-works li  {
+  list-style: none;
+  padding: 0 1em;
+}
+#mywork .navsbtns .btns-works li:nth-child(2) {
+  border: 1px solid var(--negro);
+  border-width: 0 1px;
+}
+#mywork .navsbtns .btns-works li button {
+  color:var(--negro);
+  text-decoration: none;
+  transition: 0.5s all ease;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center 32px;
+  padding-bottom: 10px;
+  border: 0;
+  background-color: unset;
+}
+#mywork .navsbtns .btns-works li button:hover {
+  background-position: center 18px;
+}
+.card-works .btn-crd {
+  border:none;
+  background-color: unset;
+}
+.card-works .btn-crd h4 {
+  display: flex;
+  flex-direction: column;
+}
+.card-works .btn-crd h4 span {
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--negro);
+    margin: 1px 0 5px;
+}
+.card-works .btn-crd h4 small {
+  font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    padding: 0 0.5em;
+}
 
+/* work texts */
+
+#worktexts {
+
+}
+#worktexts .text {
+  position: relative
+}
+#worktexts .text .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    display: flex;
+    background-position: 80px center;
+    align-items: center;
+    font-size: 1.3em;
+    color: var(--negro);
+    opacity: 1;
+    text-transform: uppercase;
+    padding: 5px;
+    border: solid 2px transparent;
+}
+#worktexts .text .btn-close:hover {
+  border-color: var(--negro);
+  background-color: var(--blanco);
+}
