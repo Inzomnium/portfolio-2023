@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import '../App.css';
 
 import { NavBar } from '../components/Navbar';
@@ -8,14 +8,28 @@ import { motion } from 'framer-motion';
 
 export default function Raiz() {
     return (
-        <motion.main animate={{opacity:1} } transition={{duration: 2}} initial={{opacity:0}}>
+        <motion.main id={"Home"} animate={{opacity:1} } transition={{duration: 2}} initial={{opacity:0}}>
+          
       <Container fluid>
-        <section className='inicio'>
+      <section className='hero' id='top'>
+
           <Banner />
-          <Titulo />
+          </section>
+          <section>
+        <Row className='presentation' id="bottom">
+        <Col className='titulo' xl={8}>
+        <Titulo />
+        </Col>
+        <Col xl={4}>
           <NavBar />
+        </Col>
+
+        </Row>
+          
+          
         </section>
       </Container>
+     
         </motion.main>
     )
        

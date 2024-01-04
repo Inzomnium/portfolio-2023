@@ -8,6 +8,7 @@ import Raiz from './routes/root';
 import ErrorPage from './errorMsj';
 import About from './routes/aboutme';
 import MyWork from './routes/mywork';
+import ContactForm from './routes/contact';
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path:"/mywork",
     element: <MyWork />
+  },
+  {
+    path:"/contact",
+    element: <ContactForm />
   }
 ]);
 

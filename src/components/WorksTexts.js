@@ -22,7 +22,8 @@ const description = query[2]
             <small>{type}</small>
             <p>{description}</p>
             <Button className="btn btn-close"
-             onClick={() => clickB()}  />
+             onClick={() => clickB()} 
+             />
              
              
         </section>
