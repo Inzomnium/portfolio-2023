@@ -1,5 +1,5 @@
 :root {
-  --blanco: #fff0ff;
+  --blanco: #eaeaea;
   --negro: #222222;
 }
 
@@ -44,18 +44,14 @@ html body {
 
 /* home */
 
-#Home #botonera {
 
-}
 #Home #botonera .navbar-nav {
   flex-direction: column;
   width: 300px;
   text-align: center;
   margin: 0 auto;
 }
-#Home #botonera .navbar-nav .nav-link.activo {
-  border: 2px solid --negro;
-}
+
 #Home #botonera .navbar-nav .nav-link {
   background-color: var(--negro);
   color: var(--blanco);
@@ -68,6 +64,37 @@ html body {
   background-color: var(--blanco);
   border: 2px solid var(--negro);
   color: var(--negro);
+}
+#botonera .navbar-nav .nav-link.active {
+  background-color: var(--blanco);
+  border: 2px solid var(--negro);
+  color: var(--negro);
+  position: relative;
+}
+
+#botonera .navbar-nav .nav-link.active::after {
+    content: '';
+    clip-path: polygon(0 0, 0% 100%, 50% 50%);
+    position: absolute;
+    background: var(--negro);
+    width: 100%;
+    z-index: 9999;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.05;
+}
+#botonera .navbar-nav .nav-link.active::before {
+  content: '';
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  position: absolute;
+  background: var(--negro);
+  width: 100%;
+  z-index: 9999;
+  height: 100%;
+  right: 0;
+  top: 0;
+  opacity: 0.05;
 }
 #Home .titulo h1 {
   font-size: 6.5rem;
@@ -180,4 +207,65 @@ html body {
 #worktexts .text .btn-close:hover {
   border-color: var(--negro);
   background-color: var(--blanco);
+}
+
+/* contact */
+#contact .formulario h2 {
+  margin: 0.4em 0 1em;
+}
+#contact .formulario textarea,
+#contact .formulario input {
+  width: 100%;
+  padding: 10px;
+  background: var(--blanco);
+  border: 1px solid var(--negro);
+  margin: -1px 0;
+  transition: all ease 0.5s;
+}
+#contact .formulario textarea:focus,
+#contact .formulario input:focus {
+  outline: none;
+  background: #ffff;
+  color: var(--negro);
+}
+#contact .formulario button {
+  background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 0;
+    width: 100%;
+    margin-top: -6px;
+    border: 1px solid var(--negro);
+    transition: all ease 0.5s;
+}
+#contact .formulario button:hover {
+  opacity:0.5
+}
+#contact .grid  {
+  align-content: center;
+  display: flex;
+}
+#contact .grid .cont-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#contact .grid .cont-items .columna {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+#contact .grid .cont-items .columna.col1 {
+    flex: 0.1;
+    align-items: center;
+    justify-content: center;
+}
+#contact .grid .cont-items .columna.col2 {
+  align-items: baseline;
+  justify-content: center;
+  padding: 0 0 0 1em;
+}
+#contact .grid .cont-items .columna div {
+  
 }

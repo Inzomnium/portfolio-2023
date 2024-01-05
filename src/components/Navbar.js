@@ -1,5 +1,5 @@
 import { Nav, Container, Navbar,  } from "react-bootstrap"
-
+import { NavLink } from "react-router-dom"
 
 export const NavBar = () => {
 
@@ -10,10 +10,10 @@ return (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="botonera">
         <Nav>
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/about">About me</Nav.Link>
-          <Nav.Link href="/mywork">My Work</Nav.Link>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <NavLink className="nav-link" to="/">Home</NavLink>
+          <NavLink className="nav-link" to="/about">About me</NavLink>
+          <NavLink className="nav-link" to="/mywork">My Work</NavLink>
+          <NavLink className="nav-link" to="/contact">Contact</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Container>
