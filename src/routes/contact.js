@@ -61,9 +61,9 @@ const ContactForm = () => {
 <Row className="m-auto w-50">
     <motion.div 
     className="col-lg-6 formulario"
-    animate={{x:0}}
+    animate={{x:0, opacity:1}}
     transition={{duration:1}}
-    initial={{x: -100 }}  
+    initial={{x: -100, opacity:0 }}  
     >
       <h2>Hey, let's get in touch</h2>
     <form
@@ -108,7 +108,12 @@ const ContactForm = () => {
     </form>
     </motion.div>
     <Col lg={6} className="grid">
-      <div className="cont-items">
+      <motion.div 
+      className="cont-items"
+      animate={{y:0, opacity:1}}
+      transition={{duration:1}}
+      initial={{y: -100, opacity:0 }} 
+      >
         <div className="columna col1">
         <div className="tit uno"><Unicons.UilEnvelope /></div> 
         <div className="tit tres"><Unicons.UilWhatsapp /></div>
@@ -121,7 +126,7 @@ const ContactForm = () => {
         <div className="tex sei">Malaga, Andalucia, Spain</div>
         <div className="tex ocho">sebacofrebarrientos@gmail.com</div>
         </div>
-      </div>
+      </motion.div>
 
     </Col>
   </Row>

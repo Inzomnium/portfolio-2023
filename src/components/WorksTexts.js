@@ -1,5 +1,5 @@
 import { Button, Col, Row, Image } from "react-bootstrap"
-
+import { motion } from "framer-motion";
 export function WorkText ({cerrar, query, abrir,  imgURl}) {
 
     console.log(query[0])     
@@ -18,31 +18,53 @@ const imgURL = query[5]
 
     return (
 
-        <section id="worktexts"> 
+        <motion.section
+         id="worktexts"
+         animate={{y:0, opacity:1}}
+         transition={{duration:0.5}}
+         initial={{y: 100, opacity:0 }}
+         
+         > 
            <Row>
-            <Col lg={3} className="px-2">
-                <Image 
+            <motion.div
+             className="px-2 col-lg-3"
+             animate={{x:0, opacity:1}}
+            transition={{duration:0.9}}
+            initial={{x: -100, opacity:0 }}
+             >
+                <img 
                 src={imgURL}
                 className="w-100"
                 
                 />
-                </Col>
+                </motion.div>
             <Col className="text" lg={9}>
             <Button className="btn btn-close"
              onClick={() => clickB()} 
              >Close</Button>
-            <h2>{title}</h2>
+            <motion.h2
+
+            animate={{y:0, opacity:1}}
+            transition={{duration:1}}
+            initial={{y: 50, opacity:0 }}
+
+            >{subtitle}</motion.h2>
+            <small>{title}</small>
             <h4>{year}</h4>
-            <small>{subtitle}</small>
-            <span>{type}</span>
-            <p>{description}</p>
+            
+           
+            <motion.p
+            animate={{y:0, opacity:1}}
+            transition={{duration:1.2}}
+            initial={{y: -100, opacity:0 }}
+            >{description}</motion.p>
             
              </Col>
 
              </Row>
              
              
-        </section>
+        </motion.section>
  
     )
     }

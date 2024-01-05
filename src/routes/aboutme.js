@@ -8,11 +8,11 @@ return (
 
 
 <motion.div 
-animate={{x:0}}
+animate={{opacity:1}}
 transition={{duration:1}}
-initial={{x: -100 }}
+initial={{opacity:0 }}
 >
-<Container fluid>
+<main>
     <h1 className="titulo-page">About me</h1>
     
   
@@ -22,7 +22,7 @@ initial={{x: -100 }}
     <Col lg={4}>
         <Image src="https://placehold.co/500x500" />
     </Col>
-    <Col lg={8}>
+    <Col lg={8} className="px-5">
     <h2>Hello, I am Sebastian</h2>
     <small className="small">Fermentum iaculis eu non diam phasellus vestibulum lorem sed.</small>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim tortor at auctor urna. Diam donec adipiscing tristique risus nec. Nec nam aliquam sem et tortor consequat id porta. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Tristique senectus et netus et malesuada fames. In iaculis nunc sed augue lacus. At auctor urna nunc id cursus metus aliquam eleifend. Diam quis enim lobortis scelerisque fermentum. Quisque egestas diam in arcu cursus.</p>
@@ -35,7 +35,7 @@ initial={{x: -100 }}
     </Row>
 
 </section>
-</Container>
+</main>
 </motion.div>
 
 
