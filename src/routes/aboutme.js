@@ -1,6 +1,7 @@
 import { NavBar } from "../components/Navbar"
 import { Col, Container, Row, Image } from "react-bootstrap"
 import { motion } from "framer-motion"
+import { Footer } from "../components/footer"
 
 export default function About () {
 
@@ -34,6 +35,8 @@ initial={{opacity:0 }}
 
     </Col>
     </Row>
+
+    <Footer />
     </Container>
 
 </section>

@@ -13,6 +13,29 @@ html body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(143deg, #eaeaea, #eddde0, #dbdbdb, #e0dccd);
+  background-size: 800% 800%;
+  -webkit-animation: gradiente 15s ease infinite;
+  -moz-animation: gradiente 15s ease infinite;
+  animation: gradiente 15s ease infinite;
+}
+
+
+
+@-webkit-keyframes gradiente {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@-moz-keyframes gradiente {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@keyframes gradiente {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
 }
 
 /* banner tests */
@@ -184,9 +207,6 @@ html body {
 
 /* work texts */
 
-#worktexts {
-
-}
 #worktexts .text {
   position: relative
 }
@@ -272,4 +292,41 @@ html body {
 }
 #contact .grid .cont-items .columna div {
   margin: 0 0 0.5em
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 2em;
+  border-top: 0.5px solid #6c757d;
+}
+footer h5 {
+  font-size: 1em;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+footer ul li,
+footer ul li a {
+  color: var(--negro);
+  text-decoration: none;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+footer p {
+  font-weight: 100;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 0 0 0;
+}
+footer small {
+  font-size: 0.7em;
+  font-weight: 600;
+  margin: -10px 0 0 0;
+  opacity: 0.4;
 }
