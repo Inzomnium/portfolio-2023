@@ -158,9 +158,32 @@ export const threepjts = [
     }
 ]
 
-export const oldPjts = [
+export const clientPman = [
     
-    
+    {
+        title: "Travel.cl",
+        subtitle: "Client guidance about a banner",
+        description: "Travel.cl it is the company behind the loyalty program of the clients of Banco de Chile, one of the biggest banks of Chile. To work in the main page was to develop conceptually the different areas of the company (Travels and retail mainly). The challenge was high in manners of how to put a little bit of everything in their main page. My main role here was from the Wireframes to the design to make all the stakeholders of the company agree till the final HTML/CSS/JS (Bootstrap 4) mockup to send to the back end provider. ",
+        imgUrl: generic,
+        year: "2019",
+        link: "https://www.travel.cl/",
+        type: "currents"
+    }
 
+
+]
+
+export const uXconsult = [
     
+    {
+        title: "Achs - Asociacion chilena de seguridad",
+        subtitle: "Intranet Architecture order",
+        description: "Travel.cl it is the company behind the loyalty program of the clients of Banco de Chile, one of the biggest banks of Chile. To work in the main page was to develop conceptually the different areas of the company (Travels and retail mainly). The challenge was high in manners of how to put a little bit of everything in their main page. My main role here was from the Wireframes to the design to make all the stakeholders of the company agree till the final HTML/CSS/JS (Bootstrap 4) mockup to send to the back end provider. ",
+        imgUrl: generic,
+        year: "2019",
+        link: "https://www.travel.cl/",
+        type: "currents"
+    }
+
+
 ]

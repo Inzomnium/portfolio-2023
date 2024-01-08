@@ -9,7 +9,9 @@ import ErrorPage from './errorMsj';
 import About from './routes/aboutme';
 import MyWork from './routes/mywork';
 import ContactForm from './routes/contact';
+import ClientH from './routes/client-handling';
 import { AnimatePresence } from 'framer-motion';
+import UxConsulting from './routes/UX-consulting';
 
 
 const router = createBrowserRouter([
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path:"/mywork",
     element: <MyWork />
+  },
+  {
+    path:"/client",
+    element: <ClientH />
+  },
+  {
+    path:"/UX-consulting",
+    element: <UxConsulting />
   },
   {
     path:"/contact",

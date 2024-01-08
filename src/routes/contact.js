@@ -122,9 +122,9 @@ const ContactForm = () => {
         </div>
         <div className="columna col2">
          <div className="tex dos"><a href="mailto:sebacofrebarrientos@gmail.com">sebacofrebarrientos@gmail.com</a></div>
-       <div className="tex cuatr">+34 1234 123</div>
+       <div className="tex cuatr"><a href="https://wa.me/34692937092" rel="noreferrer" target="_blank">Message me through Whatsapp</a></div>
         <div className="tex sei">Malaga, Andalucia, Spain</div>
-        <div className="tex ocho">sebacofrebarrientos@gmail.com</div>
+        <div className="tex ocho"><a href="https://www.linkedin.com/in/sebacofrebarrientos/">View my Linkedin profile</a></div>
         </div>
       </motion.div>
 

@@ -20,9 +20,9 @@ const imgURL = query[5]
 
         <motion.section
          id="worktexts"
-         animate={{y:0, opacity:1}}
+         animate={{ opacity:1}}
          transition={{duration:0.5}}
-         initial={{y: 100, opacity:0 }}
+         initial={{ opacity:0 }}
          
          > 
            <Row>

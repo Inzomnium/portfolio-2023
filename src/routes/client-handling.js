@@ -3,11 +3,11 @@ import { Row, Col, Container } from "react-bootstrap"
 import { NavBar } from "../components/Navbar"
 import { WorkText } from "../components/WorksTexts"
 import { WorkCards } from "../components/WorksCards"
-import { projects } from "../data/ProjectsData"
+import { clientPman } from "../data/ProjectsData"
 import { NavBarWorks } from "../components/NavWorks"
 
 
-export default function MyWork() {
+export default function ClientH() {
 
     const [OpenWork, setOpenWork] = useState(false)
 
@@ -39,7 +39,6 @@ return(
     <Col xl={12} className="navsbtns">
         <NavBar />
         <NavBarWorks />
-
     </Col>
 
 
@@ -49,7 +48,7 @@ return(
     <Container>
     <Row className={ CerrarV ? 'Fila' : 'd-none Fila' }>
     {
-                                    projects.map((project, index) => {
+                                    clientPman.map((project, index) => {
                                         return (
                                             <WorkCards 
                                             onQuery={setQuery}

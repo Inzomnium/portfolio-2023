@@ -18,6 +18,7 @@ initial={{opacity:0 }}
   
 <NavBar />
 <section id="about-main">
+    <Container fluid>
     <Row>
     <Col lg={4}>
         <Image src="https://placehold.co/500x500" />
@@ -33,6 +34,7 @@ initial={{opacity:0 }}
 
     </Col>
     </Row>
+    </Container>
 
 </section>
 </main>

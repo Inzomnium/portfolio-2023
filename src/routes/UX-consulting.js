@@ -3,11 +3,11 @@ import { Row, Col, Container } from "react-bootstrap"
 import { NavBar } from "../components/Navbar"
 import { WorkText } from "../components/WorksTexts"
 import { WorkCards } from "../components/WorksCards"
-import { projects } from "../data/ProjectsData"
+import { uXconsult } from "../data/ProjectsData"
 import { NavBarWorks } from "../components/NavWorks"
 
 
-export default function MyWork() {
+export default function UxConsulting() {
 
     const [OpenWork, setOpenWork] = useState(false)
 
@@ -49,7 +49,7 @@ return(
     <Container>
     <Row className={ CerrarV ? 'Fila' : 'd-none Fila' }>
     {
-                                    projects.map((project, index) => {
+                                    uXconsult.map((project, index) => {
                                         return (
                                             <WorkCards 
                                             onQuery={setQuery}

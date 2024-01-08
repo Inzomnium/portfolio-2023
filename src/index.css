@@ -145,7 +145,7 @@ html body {
   border: 1px solid var(--negro);
   border-width: 0 1px;
 }
-#mywork .navsbtns .btns-works li button {
+#mywork .navsbtns .btns-works li a {
   color:var(--negro);
   text-decoration: none;
   transition: 0.5s all ease;
@@ -156,7 +156,8 @@ html body {
   border: 0;
   background-color: unset;
 }
-#mywork .navsbtns .btns-works li button:hover {
+#mywork .navsbtns .btns-works li a.active,
+#mywork .navsbtns .btns-works li a:hover {
   background-position: center 18px;
 }
 .card-works .btn-crd {
@@ -221,6 +222,9 @@ html body {
   border: 1px solid var(--negro);
   margin: -1px 0;
   transition: all ease 0.5s;
+}
+#contact .formulario textarea {
+  min-height: 200px;
 }
 #contact .formulario textarea:focus,
 #contact .formulario input:focus {
