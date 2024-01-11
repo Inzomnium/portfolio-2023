@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Footer } from "../components/footer";
 import { motion } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 import { NavBar } from "../components/Navbar";
@@ -52,15 +53,20 @@ const ContactForm = () => {
 
   return (
 
-    
-<Container fluid>
+    <section id="contact" > 
 
-  <h1>Contact</h1>
+
+<Container fluid id="titulo-pagina">
+    <h1>Contact</h1>
+    <h2>Sebastian Cofre Portfolio</h2>
+</Container>
   <NavBar />
-  <section id="contact" >
-<Row className="m-auto w-50">
+
+
+<Container>
+<Row className="m-md-auto m-sm-0 w-sm-100 w-md-50 px-md-5 px-sm-0">
     <motion.div 
-    className="col-lg-6 formulario"
+    className="col-md-12 col-lg-6 formulario"
     animate={{x:0, opacity:1}}
     transition={{duration:1}}
     initial={{x: -100, opacity:0 }}  
@@ -107,7 +113,7 @@ const ContactForm = () => {
       </div>
     </form>
     </motion.div>
-    <Col lg={6} className="grid">
+    <Col xs={12} sm={6} className="grid">
       <motion.div 
       className="cont-items"
       animate={{y:0, opacity:1}}
@@ -131,9 +137,12 @@ const ContactForm = () => {
     </Col>
   </Row>
   
-  </section>
+
 
     </Container>
+    <Footer />
+    </section>
+
 
 
 

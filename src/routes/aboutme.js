@@ -14,7 +14,10 @@ transition={{duration:1}}
 initial={{opacity:0 }}
 >
 <main>
-    <h1 className="titulo-page">About me</h1>
+    <Container fluid id="titulo-pagina">
+    <h1>About me</h1>
+    <h2>Sebastian Cofre Portfolio</h2>
+    </Container>
     
   
 <NavBar />
@@ -22,7 +25,7 @@ initial={{opacity:0 }}
     <Container fluid>
     <Row>
     <Col lg={4}>
-        <Image src="https://placehold.co/500x500" />
+        <Image className="w-100" src="https://placehold.co/500x500" />
     </Col>
     <Col lg={8} className="px-5">
     <h2>Hello, I am Sebastian</h2>
@@ -36,9 +39,9 @@ initial={{opacity:0 }}
     </Col>
     </Row>
 
-    <Footer />
+    
     </Container>
-
+    <Footer />
 </section>
 </main>
 </motion.div>

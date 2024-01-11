@@ -16,7 +16,7 @@ export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, descriptio
     
 
 
-    <Col className="card-works" xs={3}>       
+    <Col className="card-works" xs={6} md={3}>       
     <button className="btn-crd" onClick={() => openText()}>
     <Image className="w-100" roundedCircle src={imgUrl} />
     <h4> <span>{title}</span> <small>{subtitle}</small> </h4>

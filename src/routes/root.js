@@ -8,9 +8,9 @@ import { motion } from 'framer-motion';
 
 export default function Raiz() {
     return (
-        <motion.main id={"Home"} animate={{opacity:1} } transition={{duration: 2}} initial={{opacity:0}}>
+        <motion.main animate={{opacity:1} } transition={{duration: 2}} initial={{opacity:0}}>
           
-      <Container fluid>
+      <Container fluid id="Home">
       <section className='hero' id='top'>
 
           <Banner />

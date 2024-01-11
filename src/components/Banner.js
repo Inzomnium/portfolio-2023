@@ -16,26 +16,28 @@ return(
 
     <div className="b-wrapper w-100">
         <motion.div className="barras-efecto" animate={{'transform': 'rotateX(0deg)' }} transition={{duration:4}} initial={{'transform': 'rotateX(90deg)'}}>
+            <div className="barra d-none d-xl-block d-md-block"></div>
+            <div className="barra "></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
-            <div className="barra"></div>
+            <div className="barra d-none d-xl-block d-md-block"></div>
             <div className="barra"></div>
 
         </motion.div>
     
-        <Image className="w-100 banner-img" alt="caca" src="https://placehold.co/1400x350"
+        <Image className="w-100 banner-img d-none d-xl-block d-md-block" alt="banner xl" src="https://placehold.co/1400x350"
+         />
+         <Image className="w-100 banner-img d-sm-none" alt="banner xl" src="https://placehold.co/500x500"
          />
     </div>
 </motion.div>

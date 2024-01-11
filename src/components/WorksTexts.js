@@ -27,7 +27,7 @@ const imgURL = query[5]
          > 
            <Row>
             <motion.div
-             className="px-2 col-lg-3"
+             className="px-2 sideb col-lg-3"
              animate={{x:0, opacity:1}}
             transition={{duration:0.9}}
             initial={{x: -100, opacity:0 }}
