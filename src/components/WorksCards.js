@@ -1,5 +1,5 @@
 import { Col, Image } from "react-bootstrap"
-
+import { motion } from "framer-motion"
 
 export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, description, imgUrl, year, link, type}) {
 
@@ -17,10 +17,22 @@ export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, descriptio
 
 
     <Col className="card-works" xs={6} md={3}>       
-    <button className="btn-crd" onClick={() => openText()}>
-    <Image className="w-100" roundedCircle src={imgUrl} />
+    <motion.button 
+    className="btn-crd" 
+    onClick={() => openText()}
+    animate={{ opacity:1}}
+    transition={{duration:0.8}}
+    initial={{ opacity:0 }}
+    >
+    <motion.img 
+    className="w-100 rounded-circle" 
+    src={imgUrl} 
+    animate={{ opacity:1}}
+    transition={{duration:2}}
+    initial={{ opacity:0 }}
+    />
     <h4> <span>{title}</span> <small>{subtitle}</small> </h4>
-    </button>
+    </motion.button>
     </Col>
     
      

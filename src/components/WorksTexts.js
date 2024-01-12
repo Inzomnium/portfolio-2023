@@ -1,8 +1,12 @@
 import { Button, Col, Row, Image } from "react-bootstrap"
 import { motion } from "framer-motion";
-export function WorkText ({cerrar, query, abrir,  imgURl}) {
 
-    console.log(query[0])     
+
+
+
+export function WorkText ({cerrar, query, abrir}) {
+
+        
 
 const year = query[0]
 const type = query[1]
@@ -10,11 +14,15 @@ const description = query[2]
 const title = query[3]
 const subtitle = query[4]
 const imgURL = query[5]
+
+
     function clickB() {
         cerrar()
         abrir()
     }
-
+    
+   
+         
 
     return (
 
@@ -34,7 +42,7 @@ const imgURL = query[5]
              >
                 <img 
                 src={imgURL}
-                className="w-100"
+                className="img-wrk"
                 
                 />
                 </motion.div>
@@ -53,11 +61,20 @@ const imgURL = query[5]
             <h4>{year}</h4>
             
            
-            <motion.p
-            animate={{y:0, opacity:1}}
-            transition={{duration:1.2}}
-            initial={{y: -100, opacity:0 }}
-            >{description}</motion.p>
+            {description.map((descriptions, index) => (
+                <motion.p
+                animate={{y:0, opacity:1}}
+                transition={{duration:1.2}}
+                initial={{y: -100, opacity:0 }}   
+                key={index}         
+                >{descriptions}</motion.p>
+              
+              
+                ))
+            
+            
+            }
+            
             
              </Col>
 
@@ -67,4 +84,5 @@ const imgURL = query[5]
         </motion.section>
  
     )
+    
     }

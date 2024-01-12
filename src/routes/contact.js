@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Footer } from "../components/footer";
+import { Mailto } from "../components/MailTo";
 import { motion } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 import { NavBar } from "../components/Navbar";
@@ -66,7 +67,7 @@ const ContactForm = () => {
 <Container>
 <Row className="m-md-auto m-sm-0 w-sm-100 w-md-50 px-md-5 px-sm-0">
     <motion.div 
-    className="col-md-12 col-lg-6 formulario"
+    className="mb-3 col-md-12 col-lg-6 formulario"
     animate={{x:0, opacity:1}}
     transition={{duration:1}}
     initial={{x: -100, opacity:0 }}  
@@ -113,7 +114,7 @@ const ContactForm = () => {
       </div>
     </form>
     </motion.div>
-    <Col xs={12} sm={6} className="grid">
+    <Col xs={12} sm={6} className="px-md-0 px-sm-3 grid">
       <motion.div 
       className="cont-items"
       animate={{y:0, opacity:1}}
@@ -127,7 +128,7 @@ const ContactForm = () => {
         <div className="tit siet"><Unicons.UilLinkedin /></div>
         </div>
         <div className="columna col2">
-         <div className="tex dos"><a href="mailto:sebacofrebarrientos@gmail.com">sebacofrebarrientos@gmail.com</a></div>
+         <div className="tex dos"><Mailto email="mailto:sebacofrebarrientos@gmail.com" subject="Hey, send me an e-mail" body='thanks for getting in contact'>sebacofrebarrientos@gmail.com</Mailto></div>
        <div className="tex cuatr"><a href="https://wa.me/34692937092" rel="noreferrer" target="_blank">Message me through Whatsapp</a></div>
         <div className="tex sei">Malaga, Andalucia, Spain</div>
         <div className="tex ocho"><a href="https://www.linkedin.com/in/sebacofrebarrientos/">View my Linkedin profile</a></div>
