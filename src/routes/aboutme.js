@@ -15,8 +15,24 @@ initial={{opacity:0 }}
 >
 <main>
     <Container fluid id="titulo-pagina">
-    <h1>About me</h1>
-    <h2>Sebastian Cofre Portfolio</h2>
+    <motion.h1
+    animate={{y:0}}
+    transition={{delay:0.5,duration:1}}
+    initial={{y:-100 }}
+    >
+        About me
+        </motion.h1>
+    <motion.h2
+    animate={{x:0}}
+    transition={{ duration:1}}
+    initial={{x:-500 }}
+    >Sebastian Cofre  
+     <motion.b
+    animate={{opacity:1}}
+    transition={{delay:1,duration:1}}
+    initial={{opacity:0 }}
+    > Portfolio</motion.b>
+    </motion.h2>
     </Container>
     
   

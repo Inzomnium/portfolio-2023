@@ -6,6 +6,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import { NavBar } from "../components/Navbar";
 import * as Unicons from '@iconscout/react-unicons';
 
+
+
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/2c0d6780-95d6-11ee-bbf6-afd56d9a4ea5";
 
 const ContactForm = () => {
@@ -58,8 +60,24 @@ const ContactForm = () => {
 
 
 <Container fluid id="titulo-pagina">
-    <h1>Contact</h1>
-    <h2>Sebastian Cofre Portfolio</h2>
+<motion.h1
+    animate={{y:0}}
+    transition={{delay:0.5,duration:1}}
+    initial={{y:-100 }}
+    >
+        Contact
+        </motion.h1>
+    <motion.h2
+    animate={{x:0}}
+    transition={{ duration:1}}
+    initial={{x:-500 }}
+    >Sebastian Cofre  
+     <motion.b
+    animate={{opacity:1}}
+    transition={{delay:1,duration:1}}
+    initial={{opacity:0 }}
+    > Portfolio</motion.b>
+    </motion.h2>
 </Container>
   <NavBar />
 

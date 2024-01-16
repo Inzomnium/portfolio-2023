@@ -6,7 +6,7 @@ import { WorkCards } from "../components/WorksCards"
 import { clientPman } from "../data/ProjectsData"
 import { NavBarWorks } from "../components/NavWorks"
 import { Footer } from "../components/footer"
-
+import { motion } from "framer-motion"
 
 export default function ClientH() {
 
@@ -33,8 +33,24 @@ export default function ClientH() {
 return(
     <main id="mywork">
 <Container fluid id="titulo-pagina">
-    <h1>My Work</h1>
-    <h2>Sebastian Cofre Portfolio</h2>
+<motion.h1
+    animate={{y:0}}
+    transition={{delay:0.5,duration:1}}
+    initial={{y:-100 }}
+    >
+        My Work
+        </motion.h1>
+    <motion.h2
+    animate={{x:0}}
+    transition={{ duration:1}}
+    initial={{x:-500 }}
+    >Sebastian Cofre  
+     <motion.b
+    animate={{opacity:1}}
+    transition={{delay:1,duration:1}}
+    initial={{opacity:0 }}
+    > Portfolio</motion.b>
+    </motion.h2>
 </Container>
 <Container fluid>
 <section id="mywork" className="header">

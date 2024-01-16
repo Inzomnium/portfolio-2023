@@ -1,6 +1,12 @@
 :root {
   --blanco: #eaeaea;
   --negro: #222222;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* Prevents overflow on the x-axis */
+    overflow-x: hidden;
 }
 
 * {
@@ -18,6 +24,7 @@ html body {
   -webkit-animation: gradiente 15s ease infinite;
   -moz-animation: gradiente 15s ease infinite;
   animation: gradiente 15s ease infinite;
+  height: 98vh;
 }
 
 
@@ -37,7 +44,11 @@ html body {
   50%{background-position:99% 100%}
   100%{background-position:2% 0%}
 }
-
+#Home,
+#main-home,
+#root {
+  height: 100%;
+}
 /* banner tests */
 #banner {
   width: 100%;
@@ -48,10 +59,12 @@ html body {
   position: relative;
   height: 100%;
 }
+#banner video,
 #banner img {
   position: absolute;
   top: 0;
   z-index: -1;
+  width: 100%;
 }
 #banner .barras-efecto {
   display: flex;
@@ -71,7 +84,18 @@ html body {
 
 /* home */
 
-
+#Home #bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 400px;
+}
+#Home .presentation {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: -1em;
+}
 #Home #botonera .navbar-nav {
   flex-direction: column;
   width: 300px;
@@ -210,6 +234,9 @@ html body {
 #myworks-btns li a:hover:after,
 #myworks-btns li a.active:after {
   width: 100%;
+}
+#mywork #navbar-main {
+  padding: 0;
 }
 .card-works .btn-crd {
   border:none;
@@ -393,9 +420,20 @@ footer small {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
+  #banner .barra {
+    width: 3%;
+  }
+  #banner .video {
+    width: auto;
+    height: 100%;
+    left: -50%;
+  }
   #Home {
     position: relative;
     padding-top: 2.5em;
+  }
+  #Home .presentation {
+    margin:0
   }
   #Home .titulo h1 {
     font-size: 4.5rem;
@@ -409,13 +447,38 @@ footer small {
   #Home .titulo h3 {
     font-size: 1.2rem;
   }
-  #banner .barra {
-    width: 3%;
-  }
+  
   #Home #main-nav {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  
+  #Home #main-nav .navbar-toggler.collapsed:after {
+    content: 'Menu';
+    position: absolute;
+    right: -47px;
+    transition: all ease 0.5s;
+    opacity: 1;
+   
+  } 
+  
+  
+  #Home #botonera .navbar-nav {
+    position: relative;
+  }
+  #Home #botonera .navbar-nav:after {
+    content: '';
+    width: 100%;
+    height: 93%;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+
+  }
+  #Home #botonera .navbar-nav .nav-link {
+    width: 100%;
   }
   #botonera .navbar-nav .nav-link {
     width: 85%;
@@ -424,9 +487,7 @@ footer small {
     align-items: center;
     padding-top: 1em;
   }
-  #contact #navbar-main {
-    padding:0
-  }
+  
   #titulo-pagina h1 {
       font-size: 3em;
   }
@@ -454,6 +515,8 @@ footer small {
   display: flex;
 
 }
+
+
 }
 
 /* Medium devices (tablets, less than 992px) */
