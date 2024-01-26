@@ -66,8 +66,9 @@ const imgURL = query[5]
                 animate={{y:0, opacity:1}}
                 transition={{duration:1.2}}
                 initial={{y: -100, opacity:0 }}   
-                key={index}         
-                >{descriptions}</motion.p>
+                key={index} 
+                dangerouslySetInnerHTML={{__html: descriptions}}        
+                ></motion.p>
               
               
                 ))

@@ -410,6 +410,28 @@ footer small {
   font-weight: 100;
   margin: 0;
 }
+.skillset .accordion,
+.skillset .accordion .accordion-item,
+.skillset .accordion .accordion-item .accordion-button {
+   background-color: transparent;
+}
+.skillset .accordion{    
+  padding: 0 1em 0;
+  font-size: 0.9em;
+}
+.skillset .accordion .accordion-item {
+    border-bottom: 1px solid var(--negro) ;
+}
+.skillset .accordion .accordion-item .accordion-button {
+  font-size: 0.45em;
+}
+.skillset .accordion .accordion-item .accordion-button:focus {
+  outline: 0;
+}
+.skillset .accordion .accordion-item .accordion-header button b {
+  margin-right: 6px;
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 

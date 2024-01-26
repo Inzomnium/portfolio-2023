@@ -43,15 +43,15 @@ initial={{opacity:0 }}
     <Row>
     <Col lg={4} className="sidebar">
         <Image className="w-100" src="https://placehold.co/500x500" />
-        <div className="skillset">
-            <h5>Some of my skillset</h5>
+        <div className="skillset px-md-2 px-0 py-3">
+            <h4>Some of my skillset</h4>
             <SkillSet />
            
 
         </div>
     </Col>
     <Col lg={8} className="px-5 main">
-    <h2>Greetings! I'm Sebastián Cofré Barrientos</h2>
+    <h2>Hi! I'm Sebastián Cofré Barrientos</h2>
     
     <p>I am a seasoned <b>web developer</b> and <b>project manager</b> with over a decade of experience in steering the digital realm. My journey has been marked by a passion for crafting seamless online experiences, combining technical expertise with creative flair.</p>
     <h4>Technical Mastery:</h4>
