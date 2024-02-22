@@ -31,7 +31,7 @@ export function  WorkCards ({setWin, onQuery, abrir, title, subtitle, descriptio
     transition={{duration:2}}
     initial={{ opacity:0 }}
     />
-    <h4> <span>{title}</span> <small>{subtitle}</small> </h4>
+    <h4> <span>{subtitle}</span> <small>{title}</small> </h4>
     </motion.button>
     </Col>
     

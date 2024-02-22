@@ -52,6 +52,12 @@ Bearing no formal title, my journey has seen me master the art of orchestrating 
         Navigating the intricate dance between stakeholders, I've made it a mission to harmonize conflicting perspectives toward a common goal. Guiding clients, often unfamiliar with the digital realm, through the intricate journey of understanding their needs and translating them into digital, web, and UX solutions is my forte. I don't just hear client expectations; I decipher and translate them into seamless online experiences.
         </Accordion.Body>
       </Accordion.Item>
+      <Accordion.Item eventKey="7">
+        <Accordion.Header><b>Kanban</b> Harmonizer</Accordion.Header>
+        <Accordion.Body>
+        Navigating the intricate dance between stakeholders, I've made it a mission to harmonize conflicting perspectives toward a common goal. Guiding clients, often unfamiliar with the digital realm, through the intricate journey of understanding their needs and translating them into digital, web, and UX solutions is my forte. I don't just hear client expectations; I decipher and translate them into seamless online experiences.
+        </Accordion.Body>
+      </Accordion.Item>
       
 
 

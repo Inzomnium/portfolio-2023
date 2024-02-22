@@ -1,5 +1,6 @@
 import { Button, Col, Row, Image } from "react-bootstrap"
 import { motion } from "framer-motion";
+import * as Unicons from '@iconscout/react-unicons';
 
 
 
@@ -47,9 +48,7 @@ const imgURL = query[5]
                 />
                 </motion.div>
             <Col className="text" lg={9}>
-            <Button className="btn btn-close"
-             onClick={() => clickB()} 
-             >Close</Button>
+            
             <motion.h2
 
             animate={{y:0, opacity:1}}
@@ -57,10 +56,10 @@ const imgURL = query[5]
             initial={{y: 50, opacity:0 }}
 
             >{subtitle}</motion.h2>
-            <small>{title}</small>
-            <h4>{year}</h4>
+            <small>{title} - {year}</small>
             
-           
+            
+           <div className="texto">
             {description.map((descriptions, index) => (
                 <motion.p
                 animate={{y:0, opacity:1}}
@@ -75,6 +74,10 @@ const imgURL = query[5]
             
             
             }
+            </div>
+            <Button className="btn btn-back"
+             onClick={() => clickB()} 
+             ><Unicons.UilArrowCircleLeft /> Back</Button>
             
             
              </Col>
