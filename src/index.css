@@ -310,6 +310,11 @@ html body {
 #worktexts .text .texto p {
   text-align: justify;
 }
+#worktexts .workimg {
+  width: 80%;
+  margin: 0 auto 1.5em;
+  display: flex;
+}
 #worktexts .sideb img {
   border: 2em solid var(--negro);
   width: 100%;
