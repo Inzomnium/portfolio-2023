@@ -3,6 +3,9 @@ import { Col, Container, Row, Image } from "react-bootstrap"
 import { motion } from "framer-motion"
 import { Footer } from "../components/footer"
 import { SkillSet } from "../components/SkillSet"
+import portrait from "../images/yoyo.png"
+import drawnPortrait from "../images/yooo.png"
+
 
 export default function About () {
 
@@ -42,7 +45,7 @@ initial={{opacity:0 }}
     <Container fluid>
     <Row>
     <Col lg={4} className="sidebar">
-        <Image className="w-100" src="https://placehold.co/500x500" />
+        <Image className="portraitfoto w-100" src={portrait} />
         <div className="skillset px-md-2 px-0 py-3">
             <h4>Some of my skillset</h4>
             <SkillSet />
@@ -53,21 +56,27 @@ initial={{opacity:0 }}
     <Col lg={8} className="px-5 main">
     <h2>Hi! I'm Sebastián Cofré Barrientos</h2>
     
-    <p>I am a seasoned <b>web developer</b> and <b>project manager</b> with over a decade of experience in steering the digital realm. My journey has been marked by a passion for crafting seamless online experiences, combining technical expertise with creative flair.</p>
-    <h4>Technical Mastery:</h4>
-<p>As a web enthusiast, I've mastered a spectrum of technologies, from the latest in <b>ReactJS</b> to the enduring efficiency of <b>jQuery</b>. My work is a testament to the seamless integration of cutting-edge solutions and proven methodologies.</p>
- <h4>Versatility Unleashed:</h4>
-<p>My career spans across dynamic roles, from managing projects and leading development teams to providing insightful <b>consultancy on UX</b> and web design. Versatility isn't just a skill; it's a mindset that allows me to adapt and excel in diverse projects. Being a <b>quick learner</b> and adaptable to any system or CMS is not just a skill for me; it's a mindset that allows me to adapt and excel in diverse projects.</p>
-<h4>Project Management Prowess:</h4>
-<p>While my formal title might not scream "Project Manager," my experience <b>managing projects</b> and <b>teams speaks volumes</b>. I thrive in orchestrating projects, ensuring every element aligns with the vision, deadlines are met, and the end product exceeds expectations.</p>
-<h4>Client Collaboration:</h4>
-<p>I'm not just a developer; I'm a client's advocate. My knack for understanding client expectations, coupled with <b>clear communication</b> and a <b>user-centric approach</b>, fosters enduring relationships. In the collaborative dance of tech and creativity, I ensure every step is in tune with the client's vision.</p>
+    <p>I am a versatile <b>Product Owner</b> with over a decade of experience bridging the gap between business needs and technical solutions. My career has been driven by a passion for creating impactful, user-centric digital products that blend innovation, functionality, and design.</p>
+
+<h4>Technical Mastery</h4>
+<p>From mastering modern technologies like <b>ReactJS</b> to leveraging the enduring efficiency of <b>jQuery</b>, I have honed my skills across a wide array of tools and methodologies. My work reflects the seamless integration of cutting-edge technologies with a deep understanding of agile processes to deliver value at every step.</p>
+
+<h4>Versatility in Action</h4>
+<p>Throughout my career, I’ve worn multiple hats—<b>Product Owner, UX Consultant, Team Leader</b>, and more—adapting to the dynamic challenges of the digital landscape. My <b>user-first mindset</b> and <b>problem-solving expertise</b> have allowed me to excel in managing cross-functional teams, refining user journeys, and delivering tailored solutions for both startups and established enterprises.</p>
+
+<h4>Product Management Excellence</h4>
+<p>As a <b>Product Owner</b>, I specialize in defining roadmaps, prioritizing backlogs, and translating complex requirements into actionable plans. I take pride in driving collaboration across teams, facilitating agile workflows, and ensuring that products not only meet technical specifications but also resonate with end-users. My leadership style emphasizes clarity, efficiency, and fostering a culture of continuous improvement.</p>
+
+<h4>Client-Centric Collaboration</h4>
+<p>More than a product leader, I am a <b>client advocate</b> who believes in clear communication and aligning business goals with user needs. My approach ensures that every stakeholder—whether internal or external—feels heard, valued, and confident in the product's direction.</p>
+
 <h4>What's Next?</h4>
-<p>Currently honing my skills in <b>ReactJS</b>, I'm on a perpetual quest for excellence. Whether you need a robust web solution, a project brought to life, or a reliable team leader, I bring dedication, technical prowess, and a touch of creativity to every endeavor.</p>
-<p>Join me in navigating the ever-evolving landscape of digital innovation.</p>
+<p>Currently sharpening my expertise in <b>Product Strategy</b> and <b>AI-driven solutions</b>, I am eager to contribute to innovative projects that require a blend of technical insight, strategic vision, and creativity. Whether you're looking to launch a cutting-edge product, optimize existing processes, or build a high-performing team, I am ready to bring my skills and passion to the table.</p>
+
+<Image className="d-block float-start w-25" src={drawnPortrait} />
 
 
-<Image className="d-flex m-auto" src="https://placekitten.com/300/300" />
+
 
     </Col>
     </Row>

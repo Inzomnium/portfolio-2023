@@ -38,7 +38,7 @@ return(
     transition={{delay:0.5,duration:1}}
     initial={{y:-100 }}
     >
-        My Work
+       Projects
         </motion.h1>
     <motion.h2
     animate={{x:0}}

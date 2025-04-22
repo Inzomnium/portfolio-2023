@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 import { NavBar } from "../components/Navbar";
 import * as Unicons from '@iconscout/react-unicons';
-
+import drawnMe from "../images/yooo.png"
 
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/2c0d6780-95d6-11ee-bbf6-afd56d9a4ea5";
@@ -132,13 +132,15 @@ const ContactForm = () => {
       </div>
     </form>
     </motion.div>
-    <Col xs={12} sm={6} className="px-md-0 px-sm-3 grid">
+    <Col xs={12} lg={6} md={12} className="px-md-0 px-sm-3 grid flex-column flex-md-row flex-wrap">
+    <img className="d-flex w-25 ms-lg-5 mt-lg-5 mb-lg-2 m-auto" src={drawnMe} />
       <motion.div 
-      className="cont-items"
+      className="cont-items w-100"
       animate={{y:0, opacity:1}}
       transition={{duration:1}}
       initial={{y: -100, opacity:0 }} 
       >
+        
         <div className="columna col1">
         <div className="tit uno"><Unicons.UilEnvelope /></div> 
         <div className="tit tres"><Unicons.UilWhatsapp /></div>
@@ -148,7 +150,7 @@ const ContactForm = () => {
         <div className="columna col2">
          <div className="tex dos"><Mailto email="mailto:sebacofrebarrientos@gmail.com" subject="Hey, send me an e-mail" body='thanks for getting in contact'>sebacofrebarrientos@gmail.com</Mailto></div>
        <div className="tex cuatr"><a href="https://wa.me/34692937092" rel="noreferrer" target="_blank">Message me through Whatsapp</a></div>
-        <div className="tex sei">Malaga, Andalucia, Spain</div>
+        <div className="tex sei">Málaga, Andalucía, Spain</div>
         <div className="tex ocho"><a href="https://www.linkedin.com/in/sebacofrebarrientos/">View my Linkedin profile</a></div>
         </div>
       </motion.div>

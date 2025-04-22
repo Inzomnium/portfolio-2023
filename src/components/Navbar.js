@@ -13,7 +13,7 @@ return (
         <Nav>
           <NavLink className="nav-link" to="/">Home</NavLink>
           <NavLink className="nav-link" to="/about">About me</NavLink>
-          <NavLink className="nav-link" to="/mywork">My Work</NavLink>
+          <NavLink className="nav-link" to="/mywork">Projects</NavLink>
           <NavLink className="nav-link" to="/contact">Contact</NavLink>
         </Nav>
       </Navbar.Collapse>

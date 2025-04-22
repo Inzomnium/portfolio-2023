@@ -6,9 +6,9 @@ export const NavBarWorks = () => {
 return (
 
 <ul id="myworks-btns" className="btns-works">
-  <li><NavLink to="/mywork">Web Dev/Design</NavLink></li>
-  <li><NavLink to="/client">Client/Project Management</NavLink></li>
-  <li><NavLink to="/UX-consulting">UX Study cases</NavLink></li>
+  <li><NavLink to="/mywork">Web Development & Design</NavLink></li>
+  <li><NavLink to="/client">Product & Project Management</NavLink></li>
+  <li><NavLink to="/UX-consulting">UX Case Studies</NavLink></li>
 </ul>
 
 )
